@@ -4,9 +4,14 @@
 
 ### react-native-lottie-splash-screen
 
+<img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/splashscreen.gif?raw=true" height="350">
+
 The implementation of the **react-native-lottie-splash-screen** library was carried out without any trouble. The documentation is complete. However, it is worth noting that the library creates a confict with the regular expo-splash-screen library, so it should be removed beforehand
 
 ### lottie-react-native
+
+<img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/in_app_animation.gif?raw=true" height="350">
+
 
 A bit worse is the lottie-react-native implementation for using animations inside the application. In the latest version 6.0.1, only the first frame is displayed. I spent about half an hour to solve the problem - to no avail. After downgrading the library to version 5.1.6, everything works correctly.
 
@@ -35,7 +40,7 @@ The results came out better than good, and the FPS number remained unchanged. Th
 
 | Lottie Animation Results | Lottie Animation Results With Shitstorm | Shitstorm without animation |
 | ------ | ------ | ------ |
-| a | b | c |
+| <img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/lottie-animation.png?raw=true" height="350"> | <img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/lottie-animation-with-shitstorm.png?raw=true" height="350"> | <img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/only-shitstorm.png?raw=true" height="350"> |
 
 The statistics showed that displaying lottie animations at the same time does not affect the application's performance.
 
