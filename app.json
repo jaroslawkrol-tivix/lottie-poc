@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "lottie-poc",
+    "slug": "lottie-poc",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
