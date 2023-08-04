@@ -18,7 +18,8 @@
     "react-native-lottie-splash-screen": "^1.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "react-native-flipper-performance-plugin": "^0.4.0"
   },
   "private": true
 }
