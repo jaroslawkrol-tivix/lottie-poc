@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "expo": "~49.0.5",
-    "expo-splash-screen": "~0.20.4",
     "expo-status-bar": "~1.6.0",
+    "lottie-ios": "^3.2.3",
+    "lottie-react-native": "^5.1.6",
     "react": "18.2.0",
-    "react-native": "0.72.3"
+    "react-native": "0.72.3",
+    "react-native-lottie-splash-screen": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

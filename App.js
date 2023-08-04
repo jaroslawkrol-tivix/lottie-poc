@@ -1,11 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useEffect} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import LottieView from "lottie-react-native";
+import LottieSplashScreen from "react-native-lottie-splash-screen";
+
+function Animation() {
+    return (
+        <LottieView style={{height: 200}} source={require("./assets/animation.json")} autoPlay loop />
+    );
+}
 
 export default function App() {
+
+    useEffect(() => {
+        LottieSplashScreen.hide(); // here
+    }, []);
+
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Animation />
+      <Text>Home screen</Text>
       <StatusBar style="auto" />
     </View>
   );
