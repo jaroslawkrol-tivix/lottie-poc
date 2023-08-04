@@ -1,5 +1,7 @@
 # Using Lottie Animations in Expo Bare Workflow project.<br />Results of POC 
 
+**Tested on Samsung Galaxy Tab A7 Lite**
+
 ## Implementation
 
 ### react-native-lottie-splash-screen
@@ -40,8 +42,11 @@ The results came out better than good, and the FPS number remained unchanged. Th
 
 | Lottie Animation Results | Lottie Animation Results With Shitstorm | Shitstorm without animation |
 | ------ | ------ | ------ |
-| <img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/lottie-animation.png?raw=true" height="350"> | <img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/lottie-animation-with-shitstorm.png?raw=true" height="350"> | <img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/only-shitstorm.png?raw=true" height="350"> |
+| <img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/lottie-animation.png?raw=true" height="200"> | <img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/lottie-animation-with-shitstorm.png?raw=true" height="200"> | <img src="https://github.com/jaroslawkrol-tivix/lottie-poc/blob/master/results/only-shitstorm.png?raw=true" height="200"> |
 
 The statistics showed that displaying lottie animations at the same time does not affect the application's performance.
 
+### 3. Memory usage: 
+
+*We ran out of time, but for full performance tests, it is necessary to look at memory consumption as well.*
 
