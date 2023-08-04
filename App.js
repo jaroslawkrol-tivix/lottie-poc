@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import React, {useEffect} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React, {memo, useEffect, useMemo, useState} from 'react';
+import {Button, StyleSheet, Text, View} from 'react-native';
 import LottieView from "lottie-react-native";
 import LottieSplashScreen from "react-native-lottie-splash-screen";
 
@@ -16,11 +16,21 @@ export default function App() {
         LottieSplashScreen.hide(); // here
     }, []);
 
+    const [textColor, setTextColor] = useState("#000000");
+
+    const runShitstorm = () => {
+        setInterval(() => {
+            setTextColor("#" + Math.floor(Math.random()*16777215).toString(16))
+        }, 200);
+    }
+
+    const animation = useMemo(() => <Animation />, []);
 
   return (
     <View style={styles.container}>
-      <Animation />
-      <Text>Home screen</Text>
+        {animation}
+      <Text style={{color: textColor}}>Home screen</Text>
+      <Button  title={"Run shitstorm"} onPress={runShitstorm} />
       <StatusBar style="auto" />
     </View>
   );
